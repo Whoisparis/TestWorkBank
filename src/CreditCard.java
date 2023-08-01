@@ -1,7 +1,7 @@
 public class CreditCard extends BankCard {
 
-    private double creditLimit;
-    private double creditAvailable;
+    private double creditLimit; //кредитный лимит
+    private double creditAvailable; //кредитные средства
 
     public CreditCard(double creditLimit, boolean cashBack, boolean bonus, boolean accumulation) {
         this.creditLimit = creditLimit;

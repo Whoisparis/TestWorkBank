@@ -1,11 +1,11 @@
 public abstract class BankCard {
-    protected double balance;
-    protected boolean bonus;
-    protected boolean cashBack;
-    protected boolean accumulation;
-    protected double bonusPoints;
-    protected double cashBackAmount;
-    protected double accumulationAmount;
+    protected double balance; //баланс карты
+    protected boolean bonus; //функция накопления бонусов
+    protected boolean cashBack; //функция кэшбека
+    protected boolean accumulation; //функция накопления
+    protected double bonusPoints; //количество бонусов
+    protected double cashBackAmount; // количества кэшбэка
+    protected double accumulationAmount; // количество накоплений
     public void deposit(double amount) {
         balance += amount;
         if (accumulation) accumulationAmount += (amount * 0.00005);
